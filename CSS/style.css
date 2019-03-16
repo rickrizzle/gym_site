@@ -1,0 +1,280 @@
+/* Universal Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: #44c184;
+}
+
+/* Link CSS */
+
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Main CSS */
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.5;
+  position: relative;
+}
+
+h1 {
+  font-family: audiowide;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.7em;
+  margin: 10px 0;
+}
+
+/* Header CSS */
+
+nav {
+  background-color: #232a3b;
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 8px;
+}
+
+header p {
+  background: #234a3b url("../images/header.jpg") no-repeat center;
+  background-size: cover;
+  color: black;
+  height: 300px;
+  font-family: audiowide;
+  font-size: 2.2em;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.more-info-join {
+  align-items: center;
+  background: #333333;
+  color: #fff;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+.more-info-join h2 {
+  text-transform: capitalize;
+}
+
+.more-info-join p {
+  align-self: center;
+  background-color: #44c184;
+  border-radius: 2px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: margin-top 0.5s;
+}
+
+.more-info-join p:hover {
+  margin-top: -7px;
+  transition: margin-top 0.5s;
+}
+
+/* Container CSS */
+
+.container {
+  margin: 0 auto 50px;
+  text-align: center;
+  width: 90%;
+}
+
+/* Section 1 */
+
+.section-1 {
+  margin-top: 50px;
+}
+
+.line {
+  border-bottom: 1px #333333 solid;
+  color: #fff;
+}
+
+.section-title-content {
+  margin-top: 30px;
+}
+
+/* Section 2 */
+
+.section-2 {
+  background-color: #c0c5ce;
+  padding: 40px 0 20px;
+}
+
+.section-2-title,
+.section-2-content {
+  color: #fff;
+}
+
+.section-2-content {
+  margin-bottom: 20px;
+}
+
+.line-2 {
+  color: #c0c5ce;
+  border-bottom: 1px solid #fff;
+}
+
+.section-2 .item-1,
+.section-2 .item-2,
+.section-2 .item-3 {
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+
+.section-2 .item-1:hover,
+.section-2 .item-2:hover,
+.section-2 .item-3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.pricing-title,
+.pricing-title-big {
+  color: #fff;
+  background-color: #343d46;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: background-color 0.5s;
+}
+
+.pricing-title:hover {
+  background-color: #9932cc;
+  transition: background-color 0.5s;
+}
+
+.pricing-title-big {
+  background-color: #9932cc;
+  font-size: 1.5em;
+}
+
+.pricing-content {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.sign-up-container {
+  color: #a742c1;
+  padding: 20px;
+}
+
+.sign-up {
+  border: 1px solid #343d46;
+  border-radius: 5px;
+  padding: 10px 100px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.sign-up:hover {
+  background-color: #9932cc;
+  color: #fff;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Contact Form css */
+
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2x;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  text-shadow: 0;
+  width: 100%;
+}
+
+.section-3 {
+  padding-top: 30px;
+}
+
+.section-3 .item-2 {
+  margin-left: -10px;
+}
+
+.contact-button {
+  border: 1px solid #a742c1;
+  margin-left: 10px;
+  padding: 10px;
+  transition: background-color 0.5s, color 0.5s;
+  width: 100%;
+}
+
+.contact-button:hover {
+  background-color: #a742c1;
+  color: #fff;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: #232a3b;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.main-footer p {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  transition: color 0.5s;
+}
+
+.social-icon:hover {
+  color: #a742c1;
+  transition: color 0.5s;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contact-info {
+  line-height: 3;
+}
+
+.hello {
+  color: #9932cc;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+/* Sign Up Form */
+
+.join-now-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sign-up-form {
+  color: #000;
+  margin: 50px 0;
+  text-align: left;
+}
