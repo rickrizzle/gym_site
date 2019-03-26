@@ -26,8 +26,8 @@ a:visited {
 body {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1.5;
-  position: relative;
 }
+position: relative;
 
 h1 {
   font-family: audiowide;
@@ -39,7 +39,21 @@ h3 {
   margin: 10px 0;
 }
 
+.line {
+  border-bottom: 1px #333333 solid;
+  color: #fff;
+}
+
+.line-2 {
+  color: #c0c5ce;
+  border-bottom: 1px solid #fff;
+}
+
 /* Header CSS */
+
+.tiny-title-color {
+  color: #9932cc;
+}
 
 nav {
   background-color: #232a3b;
@@ -277,4 +291,193 @@ header p {
   color: #000;
   margin: 50px 0;
   text-align: left;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 769px) {
+  /* Header CSS */
+  .main-header nav,
+  .main-header ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+  .main-header nav {
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .main-header ul {
+    margin-right: 10%;
+  }
+  .main-header h1 {
+    align-self: center;
+    margin: 0 auto 0 10%;
+  }
+  .main-header li {
+    margin-right: 30px;
+  }
+  /* Container CSS */
+  .container {
+    width: 80%;
+  }
+  .flex-container {
+    display: flex;
+  }
+  /* Section 1 */
+  .item-1,
+  .item-2,
+  .item-3 {
+    flex-grow: 1;
+  }
+  .section-1 .item-2 {
+    margin: 0 20px;
+  }
+  /* Section 2 CSS */
+  .section-2 .item-2 {
+    margin: 0 20px;
+  }
+  .sign-up {
+    padding: 10px 50px;
+  }
+  /* Section 3 CSS */
+  .section-3 .item-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .section-3 .item-2 .input {
+    flex-grow: 0.7;
+    margin-top: 20px;
+  }
+  /* Main Footer CSS */
+  .main-footer {
+    text-align: left;
+  }
+  .main-footer .item-1,
+  .main-footer .item-2 {
+    flex: 1;
+  }
+  .main-footer .item-1 {
+    flex: 2 40%;
+  }
+  .copyright {
+    text-align: center;
+  }
+  /* Sign Up Form */
+  .join-now-container {
+    width: 70%;
+  }
+}
+
+/* Mobile Landscape Mode CSS */
+
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+  /* Header CSS */
+  .main-header nav,
+  .main-header ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+  .main-header nav {
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .main-header ul {
+    margin-right: 10%;
+  }
+  .main-header h1 {
+    align-self: center;
+    margin: 0 auto 0 10%;
+  }
+  .main-header li {
+    margin-right: 30px;
+  }
+  /* Container CSS */
+  .container {
+    width: 80%;
+  }
+  .flex-container {
+    display: flex;
+  }
+  /* Section 1 */
+  .item-1,
+  .item-2,
+  .item-3 {
+    flex-grow: 1;
+  }
+  .section-1 .item-2 {
+    margin: 0 20px;
+  }
+  /* Section 2 CSS */
+  .section-2 .item-2 {
+    margin: 0 20px;
+  }
+  /* Section 3 CSS */
+  .section-3 .item-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .section-3 .item-2 .input {
+    flex-grow: 0.7;
+    margin-top: 20px;
+  }
+  /* Main Footer CSS */
+  .main-footer {
+    text-align: left;
+  }
+  .main-footer .item-1,
+  .main-footer .item-2 {
+    flex: 1;
+  }
+  .main-footer .item-1 {
+    flex: 2 40%;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .contact-info {
+    line-height: 1.5;
+  }
+  /* Sign Up Form */
+  .join-now-container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-header p {
+    font-size: 3em;
+    padding: 20%;
+  }
+  .join-now-container h2 {
+    margin-right: 5%;
+  }
+  .join-now-container p {
+    font-size: 1.3em;
+    width: 100px;
+  }
+  .sign-up {
+    padding: 15px 120px;
+  }
+  /* Sign Up Form */
+  .join-now-container {
+    width: 40%;
+  }
+  /* Trainer CSS */
+  .trainer-profile {
+    width: 50%;
+  }
+  .trainer-profile-content {
+    padding-top: 8%;
+  }
 }
